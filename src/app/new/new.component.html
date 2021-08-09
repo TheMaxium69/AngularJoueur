@@ -1,0 +1,14 @@
+<p>Formulaire</p>
+
+<a [routerLink]="['/shop']" class="btn btn-dark">Retour</a>
+<hr>
+<div class="mb-3">
+  <input class="form-control" placeholder="lastName" #nom>
+</div>
+<div class="mb-3">
+  <input class="form-control" placeholder="firstName" #firstname>
+</div>
+<div class="mb-3">
+  <input class="form-control" placeholder="poste" #poste>
+</div>
+<button (click)="createShort(nom.value, firstname.value, poste.value)" class="btn btn-primary">Submit</button>

@@ -1,5 +1,3 @@
-<a [routerLink]="['/new']" class="btn btn-dark">create</a>
-
 <div class="row">
   <div *ngFor="let player of lesPlayers" class="card" style="width: 18rem;">
     <div class="card-body">
@@ -8,7 +6,6 @@
       <p class="card-text">{{ player.poste }}</p>
       <small class="card-text"> id : {{ player.id }}</small><br>
       <button class="btn btn-danger" (click)="suppr(player.id)">Supprimer</button>
-      <button class="btn btn-success"> Ajoutez au panier</button>
     </div>
   </div>
 </div>

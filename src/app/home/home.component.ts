@@ -13,11 +13,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.findAll()
-    console.log(this.lesPlayers)
   }
-
-  lesShortsTest = [
-  ];
 
   lesPlayers:any = [];
 
